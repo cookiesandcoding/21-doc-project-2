@@ -1,0 +1,152 @@
+body {
+  font-family: "Anonymous.pro", monospace;
+}
+
+header {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: darkkhaki;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkorange;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: orange;
+}
+.homepage {
+  background-color: beige;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+h1 {
+  color: brown;
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  color: #666;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+  color: #555;
+}
+.text {
+  background-image: url("image.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 8s steps(500, end) infinite;
+  color: brown;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 180px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bento-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.bento-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: beige;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.bento-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h2 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: darkkhaki;
+}

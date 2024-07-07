@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thai Pad Thai Recipe</title>
+    <link rel="stylesheet" src="style1.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .recipe {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .ingredients,
+    .instructions {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .ingredients li,
+    .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .ingredients {
+      font-weight: bold;
+    }
+
+    .instructions {
+      counter-reset: step;
+    }
+
+    .instructions li {
+      position: relative;
+      counter-increment: step;
+      margin-bottom: 20px;
+    }
+
+    .instructions li:before {
+      content: counter(step);
+      background-color: #333;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#pad-thai">Pad Thai</a></li>
+          <li><a href="#green-curry-chicken">Green Curry Chicken</a></li>
+          <li><a href="#tom-yum-goong">Tom Yum Goong</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="recipe">
+      <h1 id="pad-thai">Pad Thai</h1>
+      <img
+        src="images/thaipad.png"
+        alt="thaipad"
+        class="responsive-image"
+        style="width: 500px; height: 400px"
+      />
+      <ul class="ingredients">
+        <li>200g rice noodles</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>100g tofu, cubed</li>
+        <li>100g shrimp, peeled and deveined</li>
+        <li>2 eggs, lightly beaten</li>
+        <li>2 tbsp fish sauce</li>
+        <li>1 tbsp soy sauce</li>
+        <li>1 tbsp tamarind paste</li>
+        <li>1 tbsp palm sugar</li>
+        <li>1 cup bean sprouts</li>
+        <li>2 green onions, sliced</li>
+        <li>1/4 cup crushed peanuts</li>
+        <li>Lime wedges for serving</li>
+      </ul>
+      <ol class="instructions">
+        <li>
+          Soak rice noodles in warm water until softened. Drain and set aside.
+        </li>
+        <li>
+          Heat oil in a wok or large skillet over medium-high heat. Add garlic
+          and cook until fragrant.
+        </li>
+        <li>
+          Add tofu and shrimp, stir-frying until shrimp turns pink and tofu is
+          lightly browned.
+        </li>
+        <li>
+          Push ingredients to the side of the pan, pour beaten eggs into the
+          center, and scramble until cooked.
+        </li>
+        <li>
+          Add rice noodles to the pan along with fish sauce, soy sauce, tamarind
+          paste, and palm sugar. Toss to combine.
+        </li>
+        <li>
+          Stir in bean sprouts and green onions, cooking until heated through.
+        </li>
+        <li>Serve hot, garnished with crushed peanuts and lime wedges.</li>
+      </ol>
+    </div>
+
+    <div class="recipe">
+      <h1 id="green-curry-chicken">Green Curry Chicken Recipe</h1>
+      <img
+        src="images/greenc.png"
+        class="responsive-image"
+        style="width: 300px; height: 400px"
+      />
+      <ul class="ingredients">
+        <li>400ml coconut milk</li>
+        <li>2 tbsp green curry paste</li>
+        <li>400g chicken breast, sliced</li>
+        <li>1 cup bamboo shoots</li>
+        <li>1 red bell pepper, sliced</li>
+        <li>1 tbsp fish sauce</li>
+        <li>1 tbsp palm sugar</li>
+        <li>10-12 Thai basil leaves</li>
+        <li>Cooked jasmine rice for serving</li>
+      </ul>
+      <ol class="instructions">
+        <li>
+          In a large pot or wok, heat half of the coconut milk over medium-high
+          heat until it starts to bubble.
+        </li>
+        <li>
+          Add green curry paste and stir-fry until fragrant, about 1 minute.
+        </li>
+        <li>Add chicken slices and cook until no longer pink.</li>
+        <li>
+          Pour in remaining coconut milk, bamboo shoots, and bell pepper. Stir
+          well.
+        </li>
+        <li>Season with fish sauce and palm sugar, adjusting to taste.</li>
+        <li>
+          Simmer for 10-15 minutes until chicken is tender and flavors are well
+          combined.
+        </li>
+        <li>Stir in Thai basil leaves just before serving.</li>
+        <li>Serve hot with jasmine rice.</li>
+      </ol>
+    </div>
+
+    <div class="recipe">
+      <h1 id="tom-yum-goong">Tom Yum Goong Recipe</h1>
+      <img
+        src="images/tomyum.png"
+        class="=responsive-image"
+        style="width: 400px; height: 300px"
+      />
+      <ul class="ingredients">
+        <li>4 cups chicken or vegetable broth</li>
+        <li>200g shrimp, peeled and deveined</li>
+        <li>2 stalks lemongrass, cut into 2-inch pieces and smashed</li>
+        <li>4 kaffir lime leaves</li>
+        <li>3 slices galangal or ginger</li>
+        <li>2-3 Thai bird's eye chilies, crushed</li>
+        <li>200g cherry tomatoes, halved</li>
+        <li>1 cup button mushrooms, sliced</li>
+        <li>2 tbsp fish sauce</li>
+        <li>2 tbsp lime juice</li>
+        <li>1 tbsp palm sugar</li>
+        <li>Fresh cilantro leaves for garnish</li>
+      </ul>
+      <ol class="instructions">
+        <li>
+          In a pot, bring chicken or vegetable broth to a boil over medium-high
+          heat.
+        </li>
+        <li>
+          Add lemongrass, kaffir lime leaves, galangal or ginger, and crushed
+          chilies. Simmer for 5 minutes.
+        </li>
+        <li>
+          Add shrimp, cherry tomatoes, and mushrooms. Cook until shrimp turns
+          pink and opaque.
+        </li>
+        <li>
+          Season with fish sauce, lime juice, and palm sugar. Adjust seasoning
+          to taste.
+        </li>
+        <li>
+          Remove from heat and discard lemongrass, kaffir lime leaves, and
+          galangal slices.
+        </li>
+        <li>Serve hot, garnished with fresh cilantro leaves.</li>
+      </ol>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Recipes</title>
+    <link rel="stylesheet" href="style1.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .recipe {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .ingredients,
+      .instructions {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .ingredients li,
+      .instructions li {
+        margin-bottom: 10px;
+      }
+
+      .ingredients {
+        font-weight: bold;
+      }
+
+      .instructions {
+        counter-reset: step;
+      }
+
+      .instructions li {
+        position: relative;
+        counter-increment: step;
+        margin-bottom: 20px;
+      }
+
+      .instructions li:before {
+        content: counter(step);
+        background-color: #333;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      header {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      header nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .responsive-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#coq-au-vin">Coq au Vin</a></li>
+          <li><a href="#french-croissant">French Croissant</a></li>
+          <li><a href="#creme-brulee">Crème Brûlée</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="recipe" id="french-croissant">
+      <h1>French Croissant Recipe</h1>
+      <img
+        src="images/crossiant.png"
+        alt="French Croissant"
+        class="responsive-image"
+        style="width: 500px; height: 200px"
+      />
+      <ul class="ingredients">
+        <li>500g all-purpose flour</li>
+        <li>10g salt</li>
+        <li>80g granulated sugar</li>
+        <li>10g instant yeast</li>
+        <li>300ml cold water</li>
+        <li>250g unsalted butter, chilled</li>
+        <li>1 egg, beaten (for egg wash)</li>
+      </ul>
+      <ol class="instructions">
+        <li>Mix flour, salt, sugar, and instant yeast in a large bowl.</li>
+        <li>Add cold water gradually, mixing until a rough dough forms.</li>
+        <li>
+          Knead the dough on a lightly floured surface for about 10 minutes
+          until smooth and elastic.
+        </li>
+        <li>
+          Shape the dough into a rectangle, wrap in plastic wrap, and
+          refrigerate for at least 1 hour.
+        </li>
+        <li>
+          Prepare the butter block by pounding and rolling chilled butter into a
+          square.
+        </li>
+        <li>
+          Roll out the dough, place butter block in the center, fold dough over
+          butter, and repeat folding and chilling.
+        </li>
+        <li>
+          Roll out dough, cut into triangles, and shape croissants. Proof and
+          bake until golden brown.
+        </li>
+      </ol>
+    </div>
+
+    <div class="recipe" id="coq-au-vin">
+      <h1>Coq au Vin Recipe</h1>
+      <img
+        src="images/coq.png"
+        alt="Coq au Vin"
+        class="responsive-image"
+        style="height: 400px; width: 300px"
+      />
+      <ul class="ingredients">
+        <li>4 chicken thighs</li>
+        <li>200g bacon, diced</li>
+        <li>250ml red wine</li>
+        <li>250ml chicken broth</li>
+        <li>12-15 pearl onions, peeled</li>
+        <li>200g mushrooms, sliced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 tbsp butter</li>
+        <li>2 tbsp all-purpose flour</li>
+        <li>Fresh thyme</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <ol class="instructions">
+        <li>
+          In a large skillet, cook diced bacon until crispy. Remove and set
+          aside.
+        </li>
+        <li>
+          Season chicken thighs with salt and pepper. Brown them in the same
+          skillet until golden. Remove and set aside.
+        </li>
+        <li>
+          In the same skillet, melt butter and sauté pearl onions, mushrooms,
+          and minced garlic until onions are caramelized.
+        </li>
+        <li>
+          Sprinkle flour over the vegetables and stir well. Cook for 1-2
+          minutes.
+        </li>
+        <li>
+          Slowly pour in red wine and chicken broth, stirring constantly to
+          avoid lumps. Bring to a simmer.
+        </li>
+        <li>
+          Return chicken and bacon to the skillet. Add fresh thyme. Cover and
+          simmer for 45 minutes to 1 hour, or until chicken is cooked through
+          and tender.
+        </li>
+        <li>Serve hot with crusty bread or over mashed potatoes.</li>
+      </ol>
+    </div>
+
+    <div class="recipe" id="creme-brulee">
+      <h1>Crème Brûlée Recipe</h1>
+      <img
+        src="images/crembul.png"
+        alt="Crème Brûlée"
+        class="responsive-image"
+        style="height: 400px; width: 300px"
+      />
+      <ul class="ingredients">
+        <li>6 egg yolks</li>
+        <li>100g granulated sugar, plus extra for caramelizing</li>
+        <li>500ml heavy cream</li>
+        <li>1 tsp vanilla extract</li>
+        <li>Berries for garnish (optional)</li>
+      </ul>
+      <ol class="instructions">
+        <li>
+          Preheat oven to 300°F (150°C). Place 6 ramekins in a baking dish.
+        </li>
+        <li>Whisk egg yolks and sugar until pale and creamy.</li>
+        <li>Heat heavy cream until just simmering. Remove from heat.</li>
+        <li>Slowly pour hot cream into egg mixture, whisking constantly.</li>
+        <li>
+          Stir in vanilla extract. Strain mixture through a sieve into a pouring
+          jug.
+        </li>
+        <li>
+          Pour custard mixture into ramekins. Place in a baking dish with hot
+          water.
+        </li>
+        <li>
+          Bake for 35-40 minutes until set but slightly wobbly in the center.
+        </li>
+        <li>
+          Chill for at least 2 hours. Before serving, sprinkle sugar on top and
+          caramelize with a torch.
+        </li>
+        <li>Garnish with berries and serve.</li>
+      </ol>
+    </div>
+  </body>
+</html>
